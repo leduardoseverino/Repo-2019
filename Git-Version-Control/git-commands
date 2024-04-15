@@ -2,7 +2,13 @@ git config --global user.name "username"
 
 git config --global user.email "email@mail.com"
 
+rm -rf .git
+
 git init
+
+git add README.md
+
+git config --global http.postBuffer 524288000
 
 git remote add origin https://github.com/RubensZimbres/TestePush
 
@@ -10,11 +16,11 @@ git pull
 
 git status
 
-git add Hello1.py
+git add .
 
 git commit -m "initial commit"
 
-git push -u origin master
+git push -u origin master (*main*, master changed)
 
 # alter Hello1.py
 
